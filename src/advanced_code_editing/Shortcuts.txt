@@ -1,0 +1,16 @@
+To be demonstrated:
+
+1. CTRL + alt+ shift + J
+    - select all occurrences
+2. hold Alt + left/right arrow
+    - navigate through tabs
+3. hold CTRL + tab +  backspace
+    - removes the tab in the window
+4. hold CTRL + tab +  {any of the switcher}
+    - direct to chosen window
+5. Many more
+
+User defined Shortcuts
+    1. settings (CTRL + Alt + S) -> keymap -> search (termninal) - right click -> add keyboard shortcut
+    2. add a preferred shortcut (CTRL + ` )
+    3. demonstrate the newly created shortcut
