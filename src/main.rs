@@ -3,7 +3,7 @@ mod jerwin { pub mod refactor; }
 mod leonhard { pub mod testing; }
 mod marius { pub mod code_regeneration;}
 mod sanchie {pub mod debugging;}
-mod stephen { pub mod code_editing; }
+mod advanced_code_editing {pub mod format;}
 
 fn main() {
     hannah::documentation::documentation();
@@ -11,7 +11,7 @@ fn main() {
     leonhard::testing::testing();
     marius::code_regeneration::code_generation();
     sanchie::debugging::debugging();
-    stephen::code_editing::code_editing();
+    advanced_code_editing::format::cartesian_product("stephen", "bscs3");
 }
 
 
