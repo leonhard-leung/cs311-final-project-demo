@@ -3,7 +3,7 @@ mod jerwin { pub mod refactor; }
 mod leonhard { pub mod testing; }
 mod marius { pub mod code_regeneration;}
 mod sanchie {pub mod debugging;}
-mod advanced_code_editing {pub mod format;}
+mod advanced_code_editing;
 
 fn main() {
     hannah::documentation::documentation();
