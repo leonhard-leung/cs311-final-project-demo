@@ -1,14 +1,13 @@
 To be demonstrated:
 
-1. CTRL + alt+ shift + J
-    - select all occurrences
-2. hold Alt + left/right arrow
+1. hold Alt + left/right arrow
     - navigate through tabs
-3. hold CTRL + tab +  backspace
+2. hold CTRL + tab +  backspace
     - removes the tab in the window
-4. hold CTRL + tab +  {any of the switcher}
+3. hold CTRL + tab +  {any of the switcher}
     - direct to chosen window
-5. Many more
+4. alt + f7
+    - display where a method/variable is used
 
 User defined Shortcuts
     1. settings (CTRL + Alt + S) -> keymap -> search (termninal) - right click -> add keyboard shortcut

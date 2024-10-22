@@ -1,0 +1,7 @@
+Demonstration
+
+Multiple Cursors.:
+ ALT + click
+
+Select all occurrences:
+CTRL + ALT + SHIFT + J
