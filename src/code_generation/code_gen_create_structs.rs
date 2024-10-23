@@ -1,16 +1,16 @@
 //Generating repetitive code with just one struct
-macro_rules! create_structs {
-    // ($($name:ident { $($field:ident: $type:ty),* $(,)? }),*) => {
-    //     $(
-    //         #[derive(Debug, Clone, PartialEq)]
-    //         struct $name {
-    //             $(
-    //                 $field: $type,
-    //             )*
-    //         }
-    //     )*
-    // };
-}
+// macro_rules! create_structs {
+//     ($($name:ident { $($field:ident: $type:ty),* $(,)? }),*) => {
+//         $(
+//             #[derive(Debug, Clone, PartialEq)]
+//             struct $name {
+//                 $(
+//                     $field: $type,
+//                 )*
+//             }
+//         )*
+//     };
+// }
 
 // create_structs! {
 //     User {id: u32, name: String},
