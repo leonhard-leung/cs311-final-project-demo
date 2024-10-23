@@ -30,6 +30,21 @@ fn factorial(num: u32) -> u32 {
     }
 }
 
+fn square_root(num: f64) -> Result<f64, &'static str> {
+    if num < 0.0 {
+        return Err("Cannot find the square root of a negative number");
+    }
+    Ok(num.sqrt())
+}
+
+fn fibonacci(n: u32) -> u32 {
+    match n {
+        0 => 0,
+        1 => 1,
+        _ => fibonacci(n - 1) + fibonacci(n - 2),
+    }
+}
+
 fn panic_function() {
     panic!("Panic function invoked");
 }
@@ -74,6 +89,20 @@ mod tests {
         assert_eq!(factorial(1), 1);
         assert_eq!(factorial(5), 120);
         assert_eq!(factorial(6), 720);
+    }
+
+    #[test]
+    fn test_square_root() {
+        assert_eq!(square_root(9.0), Ok(3.0));
+        assert_eq!(square_root(-1.0), Err("Cannot find the square root of a negative number"));
+    }
+
+    #[test]
+    fn test_fibonacci() {
+        assert_eq!(fibonacci(0), 0);
+        assert_eq!(fibonacci(1), 1);
+        assert_eq!(fibonacci(5), 5);
+        assert_eq!(fibonacci(6), 8);
     }
 
     #[test]
