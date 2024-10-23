@@ -1,6 +1,6 @@
 mod hannah { pub mod documentation; }
 mod jerwin { pub mod refactor; }
-mod leonhard { pub mod testing; }
+mod leonhard { pub mod testing; pub mod numbers; pub mod palindrome; }
 mod marius { pub mod code_regeneration;}
 mod sanchie {pub mod debugging;}
 mod stephen { pub mod code_editing; }
