@@ -26,7 +26,7 @@ pub fn debugging() -> Result<(), Box<dyn Error>> {
     }
 
     // Read CSV data
-    let csv_data = read_numbers_from_csv("src/sanchie/numbers.csv")?;
+    let csv_data = read_numbers_from_csv("src/debugging/numbers.csv")?;
     println!("Numbers from CSV:");
     for num in csv_data {
         println!("{}", num);
