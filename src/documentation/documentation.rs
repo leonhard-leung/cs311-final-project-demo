@@ -13,8 +13,10 @@ impl Documentation {
     /// * `y` - The second integer.
     ///
     /// # Example
+    /// ```
     /// let result = Documentation::add(2, 3);
     /// assert_eq!(result, 5);
+    /// ```
     pub fn add(x: i32, y: i32) -> i32 {
         x + y
     }
@@ -26,8 +28,10 @@ impl Documentation {
     /// * `y` - The integer to subtract.
     ///
     /// # Example
+    /// ```
     /// let result = Documentation::subtract(5, 2);
     /// assert_eq!(result, 3);
+    /// ```
     pub fn subtract(x: i32, y: i32) -> i32 {
         x - y
     }
@@ -39,8 +43,10 @@ impl Documentation {
     /// * `y` - The second integer.
     ///
     /// # Example
+    /// ```
     /// let result = Documentation::multiply(4, 3);
     /// assert_eq!(result, 12);
+    /// ```
     pub fn multiply(x: i32, y: i32) -> i32 {
         x * y
     }
@@ -54,11 +60,13 @@ impl Documentation {
     /// * `y` - The denominator.
     ///
     /// # Example
+    /// ```
     /// let result = Documentation::divide(10, 2);
     /// assert_eq!(result, Some(5));
     ///
     /// let result = Documentation::divide(10, 0);
     /// assert_eq!(result, None);
+    /// ```
     pub fn divide(x: i32, y: i32) -> Option<i32> {
         if y == 0 {
             None
