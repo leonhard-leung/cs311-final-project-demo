@@ -25,6 +25,8 @@ pub fn debugging() -> Result<(), Box<dyn Error>> {
         println!("{i}");
     }
 
+    println!("Accessing out-of-bounds index: {}", list[5]);
+
     // Read CSV data
     let csv_data = read_numbers_from_csv("src/debugging/numbers.csv")?;
     println!("Numbers from CSV:");
