@@ -1,18 +1,18 @@
-fn add(n1: f64, n2: f64) -> f64 {
+fn add(n1: i32, n2: i32) -> i32 {
     n1 + n2
 }
 
-fn subtract(n1: f64, n2: f64) -> f64 {
+fn subtract(n1: i32, n2: i32) -> i32 {
     n1 - n2
 }
 
-fn multiply(n1: f64, n2: f64) -> f64 {
+fn multiply(n1: i32, n2: i32) -> i32 {
     n1 * n2
 }
 
 fn divide(n1: f64, n2: f64) -> Result<f64, &'static str> {
     if n2 == 0.0 {
-        return Err("Cannot divide by zero");
+        panic!()
     }
 
     Ok(n1 / n2)
@@ -45,36 +45,35 @@ fn fibonacci(n: u32) -> u32 {
     }
 }
 
-fn panic_function() {
-    panic!("Panic function invoked");
-}
+
+/** ================================================================================================*/
+/** ================================================================================================*/
+
+/**
+1. tmod - test module */
 
 #[cfg(test)]
 mod tests {
-    use super::*;
+    use super::*; //allows test module to have access to parent module
 
-    #[test]
-    fn test_add() {
-        assert_eq!(add(2.0, 3.0), 5.0);
-        assert_ne!(add(2.0, 3.0), 6.0);
-    }
+    //add test method here
 
     #[test]
     fn test_subtract() {
-        assert_eq!(subtract(5.0, 3.0), 2.0);
-        assert_eq!(subtract(3.0, 5.0), -2.0);
+        assert_eq!(subtract(5, 3), 2);
+        assert_eq!(subtract(3, 5), -2);
     }
 
     #[test]
     fn test_multiply() {
-        assert_eq!(multiply(2.0, 3.0), 6.0);
-        assert_eq!(multiply(-2.0, 3.0), -6.0);
+        assert_eq!(multiply(2, 3), 6);
+        assert_eq!(multiply(-2, 3), -6);
     }
 
     #[test]
     fn test_divide() {
         assert_eq!(divide(6.0, 3.0), Ok(2.0));
-        assert_eq!(divide(6.0, 0.0), Err("Cannot divide by zero"));
+        assert_eq!(divide(10.0, 2.0), Ok(5.0));
     }
 
     #[test]
@@ -105,9 +104,10 @@ mod tests {
         assert_eq!(fibonacci(6), 8);
     }
 
+    // should panic testing
     #[test]
     #[should_panic]
-    fn test_panic_function() {
-        panic_function();
+    fn test_division_by_zero() {
+        let _ = divide(10.0,0.0);
     }
 }
