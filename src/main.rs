@@ -7,11 +7,10 @@ mod debugging {pub mod debugging;}
 mod advanced_code_editing{pub mod format; pub mod todo;}
 
 mod code_generation {
-    pub mod code_regeneration;
-    pub mod code_gen_derive;
-    pub mod code_gen_create_structs;
-    pub mod code_gen_traits_and_structs;
-    pub mod code_gen_simple_macro;
+    pub mod derive;
+    pub mod create_structs;
+    pub mod traits_and_structs;
+    pub mod simple_macro;
 }
 
 fn main() {
@@ -20,11 +19,8 @@ fn main() {
     debugging::debugging::debugging();
     advanced_code_editing::format::cartesian_product("stephen", "bscs3");
 
-    code_generation::code_regeneration::code_generation();
-    // code_generation::code_gen_derive::main();
-    // code_generation::code_gen_create_structs::main();
-    // code_generation::code_gen_traits_and_structs::main();
-    // code_generation::code_gen_simple_macro::main();
+    code_generation::derive::main();
+    // code_generation::simple_macro::main();
 }
 
 
