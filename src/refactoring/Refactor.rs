@@ -1,4 +1,5 @@
-pub fn refactor(){
+pub fn refactor()
+    {
     let x = 5;
     let b = 10;
 
@@ -15,4 +16,4 @@ pub fn refactor(){
         let div = x / b;
         println!("Division: {}", div);
     }
-}
+    }

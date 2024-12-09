@@ -5,7 +5,8 @@
 /// and division.
 pub struct Documentation;
 
-impl Documentation {
+impl Documentation
+    {
     /// Adds two integers.
     ///
     /// # Arguments
@@ -17,9 +18,10 @@ impl Documentation {
     /// let result = Documentation::add(2, 3);
     /// assert_eq!(result, 5);
     /// ```
-    pub fn add(x: i32, y: i32) -> i32 {
+    pub fn add(x: i32, y: i32) -> i32
+        {
         x + y
-    }
+        }
 
     /// Subtracts one integer from another.
     ///
@@ -32,9 +34,10 @@ impl Documentation {
     /// let result = Documentation::subtract(5, 2);
     /// assert_eq!(result, 3);
     /// ```
-    pub fn subtract(x: i32, y: i32) -> i32 {
+    pub fn subtract(x: i32, y: i32) -> i32
+        {
         x - y
-    }
+        }
 
     /// Multiplies two integers.
     ///
@@ -47,9 +50,10 @@ impl Documentation {
     /// let result = Documentation::multiply(4, 3);
     /// assert_eq!(result, 12);
     /// ```
-    pub fn multiply(x: i32, y: i32) -> i32 {
+    pub fn multiply(x: i32, y: i32) -> i32
+        {
         x * y
-    }
+        }
 
     /// Divides one integer by another.
     ///
@@ -67,11 +71,12 @@ impl Documentation {
     /// let result = Documentation::divide(10, 0);
     /// assert_eq!(result, None);
     /// ```
-    pub fn divide(x: i32, y: i32) -> Option<i32> {
+    pub fn divide(x: i32, y: i32) -> Option<i32>
+        {
         if y == 0 {
             None
         } else {
             Some(x / y)
         }
-    }
+        }
 }
