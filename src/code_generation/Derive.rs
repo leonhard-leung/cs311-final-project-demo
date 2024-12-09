@@ -1,19 +1,23 @@
 // #[derive(Debug, Clone, PartialEq)]
 // #[derive(Debug)]
-struct User {
+struct User
+    {
     name: String,
     age: u32,
-}
-impl User {
+    }
+
+impl User
+    {
     pub fn new(name: String, age: u32) -> Self {
         Self { name, age }
     }
 
     //----WE CAN IMPLEMENT CLONE FUNCTION HERE----
-}
+    }
 
 
-pub fn main() {
+pub fn main()
+    {
     let user1 = User {
         name: String::from("Alice"),
         age: 30,
@@ -28,4 +32,4 @@ pub fn main() {
     // println!("Clone: {:?}", user2);
     //
     // println!("Are users equal? {}", user1 == user2);
-}
+    }

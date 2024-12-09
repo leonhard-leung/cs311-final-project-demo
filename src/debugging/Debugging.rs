@@ -3,7 +3,8 @@ use std::fs::File;
 use std::io::{self, BufReader};
 use csv::ReaderBuilder;
 
-pub fn debugging() -> Result<(), Box<dyn Error>> {
+pub fn debugging() -> Result<(), Box<dyn Error>>
+    {
     let a = 2;
     let b = 5;
 
@@ -35,9 +36,10 @@ pub fn debugging() -> Result<(), Box<dyn Error>> {
     }
 
     Ok(())
-}
+    }
 
-fn read_numbers_from_csv(filename: &str) -> Result<Vec<i32>, Box<dyn Error>> {
+fn read_numbers_from_csv(filename: &str) -> Result<Vec<i32>, Box<dyn Error>>
+    {
     let file = File::open(filename)?;
     let mut rdr = ReaderBuilder::new().from_reader(BufReader::new(file));
     let mut numbers = Vec::new();
@@ -54,4 +56,4 @@ fn read_numbers_from_csv(filename: &str) -> Result<Vec<i32>, Box<dyn Error>> {
     }
 
     Ok(numbers)
-}
+    }
